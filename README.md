@@ -10,11 +10,18 @@ https://internprojectapp.azurewebsites.net/api/users/login
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+{
+    "Content-Type": "application/json"
+}
 ```
 
-### Request Body
-**email [string]**, **password [string, min:8, max:35]**
+### Request Body Sample
+```javascript
+{
+    email: "dbackson1@gmail.com"
+    password: "password1234@"
+}
+```
 
 ***all the above request body forms are required***
 
@@ -45,11 +52,20 @@ https://internprojectapp.azurewebsites.net/api/users/signup
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+{
+    "Content-Type": "application/json"
+}
 ```
 
-### Request Body
-**name [string]**, **email [string]**, **password [string]**, **comfirm_password [string]**
+### Request Body Sample
+```javascript
+{
+    name: "Degraft Backson"
+    email: "dbackson1@gmail.com"
+    password: "password1234@"
+    confirm_password: "password1234@"
+}
+```
 
 ***all the above request body forms are required***
 
@@ -74,12 +90,20 @@ https://internprojectapp.azurewebsites.net/api/users/add-new-player
 
 ### Headers
 ```javascript
-Content-Type: "application/json",
-Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+{
+    "Content-Type": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+}
 ```
 
 ### Request Body
-**name [string]**, **age [integer]**, **position [string]**
+```javascript
+{
+    name: "Jordan Ayew",
+    age: 28,
+    position: "FW"
+}
+```
 
 ***all the above request body forms are required***
 
@@ -107,12 +131,13 @@ Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5
 ### delete player Url [PUT]
 https://internprojectapp.azurewebsites.net/api/users/delete-player/:id
 
-***the **:id** represents the id of the particular player***
+***the **:id** represents the id of the particular player to be deleted***
 
 ### Headers
 ```javascript
-Content-Type: "application/json",
-Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+}
 ```
 
 ### Request Body
@@ -141,12 +166,20 @@ https://internprojectapp.azurewebsites.net/api/users/edit-player/:id
 
 ### Headers
 ```javascript
-Content-Type: "application/json",
-Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+}
 ```
 
 ### Request Body
-**name [string]**, **age [integer]**, **position [string]**
+```javascript
+{
+    name: "Dede Ayew",
+    age: 29,
+    position: "FW"
+
+}
+```
 
 ***any of the request body forms can be ignored i.e. It is not compulsory to provide all***
 
@@ -171,8 +204,9 @@ https://internprojectapp.azurewebsites.net/api/users/logout
 
 ### Headers
 ```javascript
-Content-Type: "application/json",
-Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
+}
 ```
 
 ### Request Body
