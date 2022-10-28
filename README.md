@@ -49,7 +49,7 @@ Content-Type: "application/json"
 ```
 
 ### Request Body
-**name [string]**,**email [string]**, **password [string]**, **comfirm_password [string]**
+**name [string]**, **email [string]**, **password [string]**, **comfirm_password [string]**
 
 ***all the above request body forms are required***
 
@@ -78,7 +78,7 @@ Content-Type: "application/json"
 ```
 
 ### Request Body
-**name [string]**,**age [integer]**, **position [string]**
+**name [string]**, **age [integer]**, **position [string]**
 
 ***all the above request body forms are required***
 
@@ -143,7 +143,7 @@ Content-Type: "application/json"
 ```
 
 ### Request Body
-**name [string]**,**age [integer]**, **position [string]**
+**name [string]**, **age [integer]**, **position [string]**
 
 ***any of the request body forms can be ignored i.e. It is not compulsory to provide all***
 
