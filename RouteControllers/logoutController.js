@@ -11,7 +11,7 @@ const logout = async (req, res) => {
   );
   if (updateJwtSalt) {
     res.status(200).send({
-      message: "You have been logged out",
+      message: "You have been logged out.",
     });
   } else {
     res.status(400).send({

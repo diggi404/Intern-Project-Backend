@@ -12,7 +12,7 @@ const signupController = async (req, res) => {
     const findusers = await users.findOne({ email: req.body.email });
     if (findusers) {
       res.status(400).send({
-        message: "users already exist!",
+        message: "user already exist!",
       });
     } else {
       const registerusers = await users.create({

@@ -47,7 +47,7 @@ const editPlayer = async (req, res) => {
     );
     if (editplayerById) {
       res.status(200).send({
-        message: "Player has been successfully updated",
+        message: "Player has been successfully updated.",
       });
     } else {
       res.status(400).send({
