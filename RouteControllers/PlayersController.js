@@ -8,10 +8,10 @@ const {
 const addNewPlayer = async (req, res) => {
   // first validate the body received for this request to prevent db query errors.
   if (validateSchema(addNewPlayerSchema, req, res)) {
+    // check if player is already uploaded for by a particular user
     const findUserPlayers = await players.find({
       $and: [{ name: req.body.name }, { user_id: req.decodedToken.id }],
     });
-    console.log(findUserPlayers);
     if (findUserPlayers.length != 0) {
       res.status(400).send({
         message: "You have already uploaded this player!",
