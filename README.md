@@ -74,7 +74,8 @@ https://internprojectapp.azurewebsites.net/api/users/add-new-player
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+Content-Type: "application/json",
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
 ```
 
 ### Request Body
@@ -110,7 +111,8 @@ https://internprojectapp.azurewebsites.net/api/users/delete-player/:id
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+Content-Type: "application/json",
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
 ```
 
 ### Request Body
@@ -139,7 +141,8 @@ https://internprojectapp.azurewebsites.net/api/users/edit-player/:id
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+Content-Type: "application/json",
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
 ```
 
 ### Request Body
@@ -168,7 +171,8 @@ https://internprojectapp.azurewebsites.net/api/users/logout
 
 ### Headers
 ```javascript
-Content-Type: "application/json"
+Content-Type: "application/json",
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
 ```
 
 ### Request Body
