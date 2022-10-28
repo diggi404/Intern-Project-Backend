@@ -8,7 +8,10 @@ const {
 const addNewPlayer = async (req, res) => {
   // first validate the body received for this request to prevent db query errors.
   if (validateSchema(addNewPlayerSchema, req, res)) {
-    uploadPlayer = await players.create({ ...req.body });
+    uploadPlayer = await players.create({
+      ...req.body,
+      user_id: req.decodedToken.id,
+    });
     if (uploadPlayer) {
       res.status(200).send({
         message: "Player has been uploaded successfully.",
@@ -22,7 +25,7 @@ const addNewPlayer = async (req, res) => {
 };
 
 const getAllPlayers = async (req, res) => {
-  res.status(200).send(await players.find({}));
+  res.status(200).send(await players.find({ user_id: req.decodedToken.id }));
 };
 
 const editPlayer = async (req, res) => {
