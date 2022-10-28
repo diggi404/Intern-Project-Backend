@@ -1,7 +1,7 @@
 # Intern-Project-Backend
 
-The project is hosted on a Microsoft Azure app service. Below is the link for the hosted project :point_down:
-
+The project is hosted on a Microsoft Azure app service. Below is the main link for the hosted project :point_down:
+https://internprojectapp.azurewebsites.net
 
 ## Login Implemenation
 
