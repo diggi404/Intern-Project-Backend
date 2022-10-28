@@ -63,7 +63,7 @@ Content-Type: "application/json"
 **status code: 400**
 ```javascript
 {
-    "message": "users already exist!"
+    "message": "user already exist!"
 }
 ```
 
