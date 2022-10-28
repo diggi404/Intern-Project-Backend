@@ -96,7 +96,7 @@ https://internprojectapp.azurewebsites.net/api/users/add-new-player
 }
 ```
 
-### Request Body
+### Request Body Sample
 ```javascript
 {
     name: "Jordan Ayew",
@@ -171,7 +171,7 @@ https://internprojectapp.azurewebsites.net/api/users/edit-player/:id
 }
 ```
 
-### Request Body
+### Request Body Sample
 ```javascript
 {
     name: "Dede Ayew",
