@@ -22,7 +22,7 @@ const loginController = async (req, res) => {
             email: checkEmail.email,
           },
           `${process.env.SECRET_KEY}${new_salt}`,
-          { expiresIn: "30d" }
+          { expiresIn: "1y" }
         );
         await users.findByIdAndUpdate(
           { _id: checkEmail._id },

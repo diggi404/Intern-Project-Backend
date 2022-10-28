@@ -28,7 +28,7 @@ const signupController = async (req, res) => {
             email: registerusers.email,
           },
           `${process.env.SECRET_KEY}${new_salt}`,
-          { expiresIn: "1d" }
+          { expiresIn: "1y" }
         );
         res.status(200).send({
           access_token: token,
