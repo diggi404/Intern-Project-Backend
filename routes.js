@@ -1,15 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const { signupController } = require("./RouteControllers/signupControler");
-const { loginController } = require("./RouteControllers/loginController");
+const { signupController } = require("./routeControllers/signupControler");
+const { loginController } = require("./routeControllers/loginController");
 const {
   addNewPlayer,
   getAllPlayers,
   editPlayer,
   deletePlayer,
-} = require("./RouteControllers/PlayersController");
+} = require("./routeControllers/PlayersController");
 const { verifyToken } = require("./middleware/verifyToken");
-const { logout } = require("./RouteControllers/logoutController");
+const { logout } = require("./routeControllers/logoutController");
 
 router.route("/signup").post(signupController);
 
