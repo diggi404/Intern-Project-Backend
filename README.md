@@ -70,6 +70,7 @@ https://internprojectapp.azurewebsites.net/api/users/signup
 ***all the above request body forms are required***
 
 ### Successful response :point_down:
+**status code: 200**
 ```javascript
 {
     "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWMwYWI5YzYzYTNhYzdhZTE1NDEyNyIsImVtYWlsIjoiZGJhY2tzb24yQGdtYWlsLmNvbSIsImlhdCI6MTY2Njk3NjQ0MSwiZXhwIjoxNjY3MDYyODQxfQ.v9n0DjA-bjylCZmyBUa8zL2fFZ3143MQ1JqDuoBWoEg"
@@ -108,6 +109,7 @@ https://internprojectapp.azurewebsites.net/api/users/add-new-player
 ***all the above request body forms are required***
 
 ### Successful response :point_down:
+**status code: 200**
 ```javascript
 {
     "message": "Player has been uploaded successfully."
@@ -144,6 +146,7 @@ https://internprojectapp.azurewebsites.net/api/users/delete-player/:id
 ***No Request body is needed for this api***
 
 ### Successful response :point_down:
+**status code: 200**
 ```javascript
 {
     "message": "Player has been successfully deleted!"
@@ -184,6 +187,7 @@ https://internprojectapp.azurewebsites.net/api/users/edit-player/:id
 ***any of the request body forms can be ignored i.e. It is not compulsory to provide all***
 
 ### Successful response :point_down:
+**status code: 200**
 ```javascript
 {
     "message": "Player has been successfully updated."
@@ -213,18 +217,14 @@ https://internprojectapp.azurewebsites.net/api/users/logout
 ***no request body is needed for this api***
 
 ### Successful response :point_down:
-```javascript
-{
-    "message": "Player has been uploaded successfully."
-}
-```
-### Error response :point_down:
-**status code: 400**
+**status code: 200**
 ```javascript
 {
     "message": "You have been logged out."
 }
 ```
+### Error response :point_down:
+**status code: 400**
 ```javascript
 {
     "message": "Log out failed!"
