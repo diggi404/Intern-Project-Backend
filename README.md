@@ -289,4 +289,3 @@ https://internprojectapp.azurewebsites.net/api/users/get-players
 ```
 ### Error response :point_down:
 ***No error response was made for this endpoint.***
-```
